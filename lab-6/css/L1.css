@@ -1,0 +1,54 @@
+.parent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logo{
+    background-color: lightgray;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+.navi{
+    background-color: lightgray;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+
+
+}
+header{
+    background-color: lightgray;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    text-align: center;
+    padding: 5vh;
+
+
+}
+.sb{
+    background-color: lightgray;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    text-align: center;
+    width: 30vw;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+
+}
+.ba{
+    background-color: lightgray;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    text-align: center;
+    width: 67vw;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+
+}
+Footer{
+    background-color: lightgray;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    text-align: center;
+
+}
