@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab-9</title>
+    <style>
+        @keyframes example {
+            0%{
+                left: 0px;
+                transform: rotate(0deg);
+            }
+            10%{
+                transform: rotate(-6deg);
+            }
+            20%{
+                transform: rotate(6deg);
+            }
+            30%{
+                transform: rotate(-6deg);
+            }
+            40%{
+                transform: rotate(6deg);
+            }
+            50%{
+                transform: rotate(-6deg);
+            }
+            60%{
+                transform: rotate(6deg);
+            }
+            70%{
+                transform: rotate(-6deg);
+            }
+            80%{
+                transform: rotate(6deg);
+            }
+            90%{
+                transform: rotate(-6deg);
+            }
+            100%{
+                transform: rotate(0deg);
+                left: 100%;
+            }
+        }
+        body {
+                width: 100vw;
+                height: 100vh;
+                position: relative;
+                background-image: url(./background_picture.jpg);
+                background-size: cover;
+                background-attachment: fixed;
+                background-position: center;
+                overflow: hidden;
+            }
+            img {
+                width:15vw;
+                position: absolute;
+                top:60vh;
+                animation: example 20s linear infinite;
+                animation-duration: 10s;
+                animation-direction: alternate; 
+            }
+    </style>
+</head>
+<body>
+    <img src="./boat_picture.png" alt="boat_picture">
+</body>
+</html>
