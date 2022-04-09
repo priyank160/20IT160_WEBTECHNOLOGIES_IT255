@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern</title>
+    <style>
+        .word {
+            border-radius: 25px;
+            width: 380px;
+            margin: 32vh auto;
+            text-align: center;
+        }
+        .error{
+            font-size: 1.25rem;
+            padding: 0 18px;
+            color: brown;
+        }
+        .button{
+            margin: 10px;
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="word">
+        <form action="#" onsubmit="return wordvalidation()">
+            <div class="word_input">
+                <input type="text" id="w_id" placeholder="Enter Any Word">
+            </div>
+            <div class="error" id="id"></div>
+            <div class="button">
+                <input type="submit" value="Check">
+            </div>
+        </form>
+    </div>
+    <script>
+        function wordvalidation() {
+            const word = document.getElementById('w_id').value;
+            let flag = true;
+
+            if (word == '') {
+                document.getElementById('id').innerHTML = "Please Enter string";
+                flag = false;
+            }
+            else if ((/^[M].[d][a-z A-z 0-9 !@#$%^&(){}<>][y]$/).test(word)) {
+                document.getElementById('id').innerHTML = "Match";
+            }
+            else if (!(/^[M]/).test(word)) {
+                document.getElementById('id').innerHTML = "Word Start with 'M'";
+                flag = false;
+            }
+            else if (!(/^..[d]/).test(word)) {
+                document.getElementById('id').innerHTML = "Word's third character is 'd'";
+                flag = false;
+            }
+            else if (!(/[y]$/).test(word)) {
+                document.getElementById('id').innerHTML = "Word's Last Character is 'y'";
+                flag = false;
+            }
+            return flag;
+        }
+    </script>
+</body>
+</html>

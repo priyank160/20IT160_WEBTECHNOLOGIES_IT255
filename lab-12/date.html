@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date</title>
+</head>
+<body>
+    <div id="date"></div>
+    <div id="d_of_birth"></div>
+    <div id="diff"></div>
+    <div id="gettime"></div>
+    <div id="getFullYear"></div>
+    <div id="getMonth"></div>
+    <div id="getHours"></div>
+    <script>
+        const d = new Date();
+        const bod = new Date(2003, 6, 24, 12, 40, 12, 34)
+        document.getElementById('date').innerHTML = 'Today\' date is <b>' + d + '</b>';
+        document.getElementById('d_of_birth').innerHTML = 'date of birth is <b>' + bod + '</b>';
+        document.getElementById('diff').innerHTML = 'Date(2022, 01, 14, 12, 13, 12) = <b>' + new Date(2022, 01, 14, 12, 13, 12) + '</b><br>  Date("2202-01-24") = <b>' + new Date("2202-01-24") + '</b><br> Date("2022-03") = <b>' + new Date("2022-03") + '</b><br> Date("2022") = <b>' + new Date("2022") + '</b>';
+        document.getElementById('gettime').innerHTML = '<br>getTime() = <b>' + d.getTime() + '</b>';
+        document.getElementById('getFullYear').innerHTML = '<br>getFullYear() = <b>' + d.getFullYear() + '</b>';
+        document.getElementById('getMonth').innerHTML = '<br>getMonth() = <b>' + d.getMonth() + '</b>';
+        document.getElementById('getHours').innerHTML = '<br>getHours() = <b>' + d.getHours() + '</b>';
+    </script>
+</body>
+
+</html>

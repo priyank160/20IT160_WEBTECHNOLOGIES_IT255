@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <div id="dplay"></div>
+    <div id="element"></div>
+    <div id="len"></div>
+    <div id="sort"></div>
+    <div id="splice"></div>
+    <div id="slice"></div>
+    <div id="reverse"></div>
+    <div id="delete"></div>
+    <div id="pop"></div>
+    <div id="push"></div>
+    <script>
+        const animal = ['cow', 'rabbit', 'dog', 'cat', 'elephant', 'lion','tiger'];
+        document.getElementById('dplay').innerHTML = 'All element of Arrray is <b> ' + animal + '</b>';
+        document.getElementById('element').innerHTML = '<br>4rd element of Arrray is <b> ' + animal[4] + '</b>';
+        document.getElementById('len').innerHTML = '<br>length of Arrray is <b> ' + animal.length + '</b>';
+        animal.sort();
+        document.getElementById('sort').innerHTML = '<br>After sorting element of Arrray is <b> ' + animal + '</b>';
+        animal.splice(3, 6, 'dear', 'baffalo');
+        document.getElementById('splice').innerHTML = '<br>Affter splice 2 element at position 3 & 6, Arrray is <b> ' + animal + '</b>';
+        document.getElementById('slice').innerHTML = '<br>Affter slice from 1 to 5, Arrray is <b> ' + animal.slice(1, 6); + '</b>';
+        document.getElementById('reverse').innerHTML = '<br>After reverse, Array is <b> ' + animal.reverse() + '</b>';
+        delete animal[2];
+        document.getElementById('delete').innerHTML = '<br>Affter delete 2rd element, Arrray is <b> ' + animal + '</b>';
+        animal.pop();
+        document.getElementById('pop').innerHTML = '<br>Affter pop element , Arrray is <b> ' + animal + '</b>';
+        animal.push('snake')
+        document.getElementById('push').innerHTML = '<br>Affter push element Orange, Arrray is <b> ' + animal + '</b>';
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+<body>
+    <div id="str"></div>
+    <div id="len"></div>
+    <div id="slice"></div>
+    <div id="sstr"></div>
+    <div id="substr"></div>
+    <div id="endwith"></div>
+    <div id="startsWith"></div>
+    <div id="lwr"></div>
+    <div id="upr"></div>
+    <div id="index"></div>
+    <div id="search"></div>
+    <script>
+        let str = "Chandubhai S Patel Institute Of Technology";
+        document.getElementById('str').innerHTML = 'String = <b>' + str + '</b>';
+        document.getElementById('len').innerHTML = '<br>Length of String = <b>' + str.length + '</b>';
+        document.getElementById('slice').innerHTML = '<br>Slice of String = <b>' + str.slice(5, 8) + '</b>'; 
+        document.getElementById('substr').innerHTML = '<br>Substring of String = <b>' + str.substring(10, 14); + '</b>'; 
+        document.getElementById('substr').innerHTML = '<br>Substr of String = <b>' + str.substr(10, 18); + '</b>'; 
+        document.getElementById('endwith').innerHTML = '<br>End with A : <b>' + str.endsWith('A') + '</b>';
+        document.getElementById('startsWith').innerHTML = '<br>Start with A = <b>' + str.startsWith('A') + '</b>';
+        document.getElementById('lwr').innerHTML= '<br>toLowercase= <b>'+ str.toLowerCase() + '</b>';
+        document.getElementById('upr').innerHTML = '<br>toUpperCase= <b>' + str.toUpperCase() + '</b>';
+        document.getElementById('index').innerHTML = '<br>Index of p = <b>' + str.indexOf("p") + '</b>';
+        document.getElementById('search').innerHTML = '<br>Search H = <b>' + str.search('H') + '</b>';
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+.error_message{
+    display: none;
+
+}
+.error_message{
+    display: none;
+    color: rgb(255, 0, 0);
+    margin-bottom: 20px;
+} 
+button {
+    color: white;
+    padding: 15px 22px;
+    margin: 9px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 2rem;
+    font-size: 2rem;
+
+  }
+button:hover {
+    opacity: 0.8;
+}
+form{
+    border: 1px solid #000000;
+    width: 100%;
+    margin: auto;
+    margin-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 2rem;
+    font-size: 2rem;
+  }

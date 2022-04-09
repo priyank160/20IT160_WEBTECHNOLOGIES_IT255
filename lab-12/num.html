@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number</title>
+</head>
+<body>
+    <p>Integers are accurate up to 15 digits</p>
+    <div id="n"></div>
+    <div id="val"></div>
+    <div id="arith"></div>
+    <div id="toExpon"></div>
+    <div id="toFixed"></div>
+    <div id="toPrecision"></div>
+    <div id="maxval"></div>
+    <div id="minval"></div>
+    <script>
+        let x = 999999999999999;
+        let y = 9999999999999999;
+        document.getElementById("n").innerHTML = 'If x = 999999999999999 then it take x = ' + x + "<br> If y = 9999999999999999 then it take y = " + y;
+        document.getElementById("val").innerHTML = '<br>(0.4 * 20 + 0.8 * 20) / 100 = ' + (0.4 * 20 + 0.8 * 20) / 100;
+
+        x = "250";
+        y = "40";
+        document.getElementById("arith").innerHTML = '<br> x = ' + x + ' & y = ' + y + '(Here data type of x and y is str)<br> x + y = ' + (x + y) + '<br> x - y = ' + (x - y) + '<br> x * y = ' + (x * y) + '<br> x / y = ' + (x / y);
+
+        let n = 1.456;
+        document.getElementById("toExpon").innerHTML = 'n = ' + n + '<br> Default Exponential = <b>' + n.toExponential() + '</b><br> Exponential up to 3 place = <b>' + n.toExponential(3) + '</b><br> Exponential up to 6 place = <b>' + n.toExponential(6) + '</b>';
+        document.getElementById("toFixed").innerHTML = 'n = ' + n + '<br> Default Fixed = <b>' + n.toFixed() + '</b><br> Fixed up to 3 place = <b>' + n.toFixed(3) + '</b><br> Fixed up to 6 place = <b>' + n.toFixed(6) + '</b>';
+        document.getElementById("toPrecision").innerHTML = 'n = ' + n + '<br> Default Precision = <b>' + n.toPrecision() + '</b><br> Precision up to 3 place = <b>' + n.toPrecision(3) + '</b><br> Precision up to 6 place = <b>' + n.toPrecision(6) + '</b>';
+        document.getElementById('maxval').innerHTML = 'Max value in javascript = <b>' + Number.MAX_VALUE + '</b>';
+        document.getElementById('minval').innerHTML = '<br>Min value in javascript = <b>' + Number.MIN_VALUE + '</b>';
+    </script>
+</body>
+</html>

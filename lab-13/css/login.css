@@ -1,0 +1,44 @@
+form{
+    border: 1px solid #000000;
+    width: 30%;
+    margin: auto;
+    margin-top: 30px;
+    font-size: 2rem;
+    border-radius: 2rem;
+  }
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(143, 142, 142);
+    box-sizing: border-box;
+  }
+button {
+    background-color: #338dd2;
+    color: white;
+    padding: 15px 22px;
+    margin: 9px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 2rem;
+  }
+button:hover {
+    opacity: 0.8;
+}
+    
+.container {
+    padding: 50px;
+}
+.error_message{
+    display: none;
+    color: rgb(255, 0, 0);
+    margin-bottom: 20px;
+} 
+@media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+  }

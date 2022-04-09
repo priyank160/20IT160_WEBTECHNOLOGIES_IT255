@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="validation.css">
+    <title>all validation</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">form validation</h1>
+    <div class="valid">
+        <form action="#" onsubmit="return formvalidation()">
+            <div class="email">
+                <input type="email" name="email" id="email_id" placeholder="Email">
+            </div>
+            <div class="email_error" id="email_er_id"> </div>
+            <div class="mobile">
+                <input type="text" name="mobile" id="mo_id" placeholder="Mobile number">
+            </div>
+            <div class="mobile_error" id="mobile_er_id"> </div>
+            <div class="credit">
+                <input type="text" id="credit_id" placeholder="Credit Card Number">
+            </div>
+            <div class="credit_error" id="credit_er_id"></div>
+            <div class="zipcode">
+                <input type="text" id="zip" placeholder="Zipcode">
+            </div>
+            <div class="zip_error" id="zip_er_id"></div>
+            <div class="button">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+    <script src="validation.js"></script>
+</body>
+
+</html>
